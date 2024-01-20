@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>App Landing</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <nav class="bg-[#0E1133] py-6">
-        <div class="w-[90% mx-auto lg:px-24 px-8">
-            <div class="flex text-white justify-between">
-                <div class="flex justify-center items-center gap-6">
-                    <div class="">
-                        <img src="assets/logo-3.png" alt="">
-                    </div>
-                    <div class=" space-x-4 text-lg font-semibold">
-                        <a class="hover:text-orange-600 duration-500" href="">Home</a>
-                        <a class="hover:text-orange-600 duration-500" href="#">About</a>
-                        <a class="hover:text-orange-600 duration-500" href="#">Blog</a>
-                        <a class="hover:text-orange-600 duration-500" href="#">Contact</a>
-                    </div>
-                </div>
-                <div class="">Button</div>
+      <div class="w-[90% mx-auto lg:px-24 px-8">
+        <div class="flex text-white justify-between items-center">
+          <div class="flex justify-center items-center gap-10">
+            <div class="">
+              <img src="assets/logo-3.png" alt="" />
             </div>
+            <div class="space-x-4 lg:space-x-2 text-lg font-semibold hidden md:flex lg:flex">
+              <a class="hover:text-orange-600 duration-500" href="">Home</a>
+              <a class="hover:text-orange-600 duration-500" href="#">About</a>
+              <a class="hover:text-orange-600 duration-500" href="#">Blog</a>
+              <a class="hover:text-orange-600 duration-500" href="#">Contact</a>
+            </div>
+          </div>
+          <div class="space-x-4 hidden md:flex lg:flex">
+            <button class="text-lg font-semibold">Login</button>
+            <button
+              class="bg-orange-600 rounded-md md:px4 md:py-2 lg:px-6 lg:py-3 text-lg font-semibold hover:bg-transparent border-2 border-orange-600"
+            >
+              Get Started
+            </button>
+          </div>
+          <div class="lg:hidden">
+            <img class="w-8 h-8" src="./assets/more.png" alt="" />
+          </div>
         </div>
+      </div>
     </nav>
-</body>
+  </body>
 </html>
